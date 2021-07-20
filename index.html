@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Widjet</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="getWeatherBtn">My location</button>
+
+    <form id="getCityForm">
+        <input type="text" id="cityInput">
+        <input type="submit" id="find-city" value="Find City"></input>
+    </form>
+
+    <p id="previousSearch" style="display: inline-block"></p>
+    <p id="previousSearchLink" style="display: inline-block; color: blue; font-weight: bold;"></p>
+
+    <div id="loading"></div>
+    <div id="weatherBlock">
+        <ul id="weatherList">
+        </ul>
+        <img src="" alt="weather icon" id="weatherIcon" class="sky-icon">
+    </div>
+
+    <h2>Search history</h2>
+    <div id="searchHistoryContainer" class="search-history-container">
+    </div>
+
+    <script src="weather-script.js" type="module"></script>
+</body>
+</html>
